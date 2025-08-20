@@ -1,6 +1,6 @@
 # Creating a RAG Chatbot With GPT-4o Using SERP Data
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.com/) 
+[![Promo](https://media.brightdata.com/2025/08/SERP-API-50-off-GitHub-banner_1389_166.png)](https://brightdata.com/) 
 
 This guide explain how to build a Python RAG chatbot using GPT-4o and Bright Data’s SERP API for more accurate, context-rich AI responses.
 
