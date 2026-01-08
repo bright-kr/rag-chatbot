@@ -136,7 +136,7 @@ import streamlit as st
 
 그다음 프로젝트 폴더에 `.env` 파일을 만들어 모든 자격 증명을 저장하십시오. 이제 프로젝트 구조는 아래와 같이 보입니다:
 
-![Project structure](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-19.png)
+![Project structure](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-19.png)
 
 `app.py`에서 아래 함수를 사용하여 `python-dotenv`가 `.env`에서 environment variables를 로드하도록 지시하십시오:
 
@@ -158,17 +158,17 @@ SERP API를 설정하려면 [official documentation](https://docs.brightdata.com
 
 아직 계정을 만들지 않았다면 [Bright Data에 가입](https://brightdata.co.kr)하십시오. 로그인한 뒤 계정 대시보드로 이동합니다:
 
-![Account main dashboard](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-18.png)
+![Account main dashboard](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-18.png)
 
 거기서 “Get proxy products” 버튼을 클릭하십시오.
 
 그러면 아래 페이지로 이동하며, “SERP API” 행을 클릭해야 합니다:
 
-![Clicking on SERP API](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-17.png)
+![Clicking on SERP API](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-17.png)
 
 SERP API 제품 페이지에서 “Activate zone”을 토글하여 제품을 활성화하십시오:
 
-![Activating the SERP zone](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-16.png)
+![Activating the SERP zone](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-16.png)
 
 이제 “Access parameters” 섹션에서 SERP API host, port, username, password를 복사하여 `.env` 파일에 추가하십시오:
 
@@ -413,7 +413,7 @@ return extracted_text_list
 
 예를 들어, 아래 [web page](https://athomeinhollywood.com/2024/09/19/transformers-one-review/)를 고려해 보십시오:
 
-![Transformers one review page](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-15.png)
+![Transformers one review page](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-15.png)
 
 해당 페이지에 이 함수를 적용하면 다음 텍스트 배열이 생성됩니다:
 
@@ -795,7 +795,7 @@ Network URL: http://172.27.134.248:8501
 
 지침에 따라 브라우저에서 `http://localhost:8501`로 이동하십시오. 아래와 같은 화면이 표시될 것입니다:
 
-![Streamlit app screenshot](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-14.png)
+![Streamlit app screenshot](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-14.png)
 
 아래와 같은 Google 검색 쿼리를 사용하여 애플리케이션을 테스트하십시오:
 
@@ -811,7 +811,7 @@ Write a review for the movie Transformers One
 
 “Send”를 클릭하고 애플리케이션이 요청을 처리할 때까지 기다리십시오. 몇 초 후 아래와 같은 결과를 얻을 수 있습니다:
 
-![App result screenshot](https://github.com/luminati-io/rag-chatbot/blob/main/Images/image-13.png)
+![App result screenshot](https://github.com/bright-kr/rag-chatbot/blob/main/Images/image-13.png)
 
 “AI Final Prompt” 드롭다운을 펼치면, 애플리케이션이 RAG를 위해 사용한 전체 프롬프트를 확인할 수 있습니다.
 
