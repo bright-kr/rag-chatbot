@@ -12,7 +12,7 @@
     2. [Step #2: 필요한 라이브러리 설치](#step-2-install-the-required-libraries)
     3. [Step #3: 프로젝트 준비](#step-3-prepare-your-project)
     4. [Step #4: SERP API 구성](#step-4-configure-serp-api)
-    5. [Step #5: SERP スクレイピング 로직 구현](#step-5-implement-the-serp-scraping-logic)
+    5. [Step #5: SERP 스크레이핑 로직 구현](#step-5-implement-the-serp-scraping-logic)
     6. [Step #6: SERP URL에서 텍스트 추출](#step-6-extract-text-from-the-serp-urls)
     7. [Step #7: RAG 프롬프트 생성](#step-7-generate-the-rag-prompt)
     8. [Step #8: GPT 요청 수행](#step-8-perform-the-gpt-request)
@@ -35,9 +35,9 @@ GPT-4o의 지식 컷오프 날짜는 [2023년 10월](https://computercity.com/ar
 
 이 튜토리얼은 OpenAI의 GPT 모델을 사용하여 RAG 챗봇을 구축하는 과정을 안내합니다. 아이디어는 특정 검색 쿼리에 대해 Google에서 상위 성과를 내는 페이지들로부터 텍스트를 수집하고, 이를 GPT 요청의 컨텍스트로 사용하는 것입니다.
 
-가장 큰 과제는 SERP 데이터의 スクレイピング입니다. 대부분의 검색 엔진은 페이지에 대한 자동화된 접근을 방지하기 위해 고급 アンチボット 솔루션을 갖추고 있습니다. 자세한 안내는 [how to scrape Google in Python](https://brightdata.co.kr/blog/web-data/scraping-google-with-python) 가이드를 참고하십시오.
+가장 큰 과제는 SERP 데이터의 스크레이핑입니다. 대부분의 검색 엔진은 페이지에 대한 자동화된 접근을 방지하기 위해 고급 안티봇 솔루션을 갖추고 있습니다. 자세한 안내는 [how to scrape Google in Python](https://brightdata.co.kr/blog/web-data/scraping-google-with-python) 가이드를 참고하십시오.
 
-スクレイピング 프로세스를 단순화하기 위해 [Bright Data’s SERP API](https://brightdata.co.kr/products/serp-api)를 사용하겠습니다.
+스크레이핑 프로세스를 단순화하기 위해 [Bright Data’s SERP API](https://brightdata.co.kr/products/serp-api)를 사용하겠습니다.
 
 이 SERP スクレイ퍼를 사용하면 단순한 HTTP 요청으로 Google, DuckDuckGo, Bing, Yandex, Baidu 및 기타 검색 엔진의 SERP를 손쉽게 가져올 수 있습니다.
 
@@ -72,7 +72,7 @@ cd rag_gpt_serp_scraping
 
 그다음 선호하는 Python IDE에서 프로젝트 디렉터리를 여십시오. [PyCharm Community Edition](https://www.jetbrains.com/pycharm/download/) 또는 [Visual Studio Code with the Python extension](https://code.visualstudio.com/docs/languages/python)을 사용하면 됩니다.
 
-rag\_gpt\_serp\_scraping 내부에 빈 app.py 파일을 추가하십시오. 이 파일에는 スクレイピング 및 RAG 로직이 포함됩니다.
+rag\_gpt\_serp\_scraping 내부에 빈 app.py 파일을 추가하십시오. 이 파일에는 스크레이핑 및 RAG 로직이 포함됩니다.
 
 다음으로, 프로젝트 디렉터리에서 [Python virtual environment](https://docs.python.org/3/library/venv.html)를 초기화하십시오:
 
@@ -817,10 +817,10 @@ Write a review for the movie Transformers One
 
 ## Conclusion
 
-Python RAG 챗봇을 사용할 때의 주요 과제는 Google과 같은 검색 엔진을 スクレイピング하는 것입니다:
+Python RAG 챗봇을 사용할 때의 주요 과제는 Google과 같은 검색 엔진을 스크레이핑하는 것입니다:
 
 1. SERP 페이지 구조를 자주 변경합니다.
-2. 사용 가능한 アンチボット 대책 중에서도 가장 정교한 수준의 보호가 적용되어 있습니다.
-3. 대량의 SERP 데이터를 同時接続로 가져오는 것은 복잡하며 비용이 많이 들 수 있습니다.
+2. 사용 가능한 안티봇 대책 중에서도 가장 정교한 수준의 보호가 적용되어 있습니다.
+3. 대량의 SERP 데이터를 동시 연결로 가져오는 것은 복잡하며 비용이 많이 들 수 있습니다.
 
 [Bright Data’s SERP API](https://brightdata.co.kr/products/serp-api)는 주요 검색 엔진의 실시간 SERP 데이터를 노력 없이 가져올 수 있도록 도와드립니다. 또한 RAG 및 다양한 다른 애플리케이션도 지원합니다. 지금 무료 체험을 시작해 보십시오!
